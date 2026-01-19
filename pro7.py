@@ -1,4 +1,7 @@
-num = float(input("Enter a float number: "))
+sentence = input("Enter sentence: ")
+word = input("Enter word: ")
 
-result = int(num)
-print("Integer value =", result)
+if word in sentence:
+    print("Word is present")
+else:
+    print("Word is not present")

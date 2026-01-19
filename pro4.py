@@ -1,7 +1,3 @@
-num = int(input("Enter a number: "))
-
-square = num * num
-cube = num * num * num
-
-print("Square =", square)
-print("Cube =", cube)
+s = input("Enter a string: ")
+print("First:", s[0])
+print("Last:", s[-1])
