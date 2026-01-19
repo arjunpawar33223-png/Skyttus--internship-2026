@@ -1,4 +1,4 @@
-lenght=float(input("enter lenght:"))
-width=float(input("enter width:"))
-area=lenght*width
-print("area of rectangle:",area)
+num = float(input("Enter a float number: "))
+
+result = int(num)
+print("Integer value =", result)

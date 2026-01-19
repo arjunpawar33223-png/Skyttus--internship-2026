@@ -1,3 +1,6 @@
-a=int(input("Enter frist number:"))
-b=int(input("Enter second number:"))
-print("sum=",a+b)
+num = int(input("Enter a number: "))
+
+if num % 2 == 0:
+    print("Even number")
+else:
+    print("Odd number")

@@ -1,5 +1,4 @@
-num=int(input("enter a number:"))
-if num>=0 :
-    print (" number is positive")
-else:
-    print (" number is negative")
+num = input("Enter a number: ")
+
+num = int(num)
+print("Result =", num * 10)
