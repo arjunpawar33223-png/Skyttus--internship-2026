@@ -1,3 +1,7 @@
-name = input("Enter name: ")
-age = int(input("Enter age: "))
-print(f"My name is {name} and I am {age} years old")
+total = 0
+
+for i in range(1, 101):
+    if i % 2 == 0:
+        total += i
+
+print("Sum of even numbers:", total)

@@ -1,2 +1,2 @@
-s = input("Enter a string: ")
-print("Length:", len(s))
+for i in range(1, 11):
+    print(i)

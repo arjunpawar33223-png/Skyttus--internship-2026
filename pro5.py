@@ -1,3 +1,15 @@
-s = input("Enter a string: ")
-ch = input("Enter a character: ")
-print("Count:", s.count(ch))
+n = int(input("Enter a number: "))
+flag = True
+
+if n <= 1:
+    flag = False
+else:
+    for i in range(2, n):
+        if n % i == 0:
+            flag = False
+            break
+
+if flag:
+    print("Prime number")
+else:
+    print("Not a prime number")

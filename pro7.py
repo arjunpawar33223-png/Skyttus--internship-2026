@@ -1,7 +1,8 @@
-sentence = input("Enter sentence: ")
-word = input("Enter word: ")
+n = int(input("Enter a number: "))
+count = 0
 
-if word in sentence:
-    print("Word is present")
-else:
-    print("Word is not present")
+while n > 0:
+    count += 1
+    n = n // 10
+
+print("Total digits:", count)
