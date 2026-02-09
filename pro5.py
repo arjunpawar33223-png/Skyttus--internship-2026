@@ -1,11 +1,13 @@
-class Employee:
-    def __init__(self, name, salary):
-        self.name = name
-        self.salary = salary
+class Circle:
+    def draw(self):
+        print("Drawing Circle")
 
-    def display_salary(self):
-        print(f"{self.name}'s salary: {self.salary}")
+class Square:
+    def draw(self):
+        print("Drawing Square")
 
-# Example
-emp = Employee("Arjun", 50000)
-emp.display_salary()
+def draw_shape(shape):
+    shape.draw()
+
+draw_shape(Circle())
+draw_shape(Square())

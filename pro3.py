@@ -1,12 +1,14 @@
-class Student:
-    def __init__(self, name, marks):
-        self.name = name
-        self.marks = marks  # List of marks
+class Animal:          # Base class
+    def speak(self):
+        print("Animal makes a sound")
 
-    def average_marks(self):
-        avg = sum(self.marks) / len(self.marks)
-        print(f"{self.name}'s average marks: {avg:.2f}")
+class Dog(Animal):     # Derived class
+    def speak(self):   # Overriding method
+        print("Dog barks")
 
-# Example
-student = Student("Arjun", [80, 90, 70])
-student.average_marks()
+# Object creation
+a = Animal()
+d = Dog()
+
+a.speak()
+d.speak()

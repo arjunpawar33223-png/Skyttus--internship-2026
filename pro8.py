@@ -1,13 +1,11 @@
-class Laptop:
-    def __init__(self, brand, price):
-        self.brand = brand
-        self.price = price
+class Teacher:
+    def teach(self):
+        print("Teaching students")
 
-    def apply_discount(self, discount_percent):
-        discount_amount = self.price * discount_percent / 100
-        self.price -= discount_amount
-        print(f"Price after {discount_percent}% discount: {self.price}")
+class Student(Teacher):
+    def study(self):
+        print("Studying")
 
-# Example
-laptop = Laptop("Dell", 50000)
-laptop.apply_discount(10)
+s = Student()
+s.teach()
+s.study()

@@ -1,22 +1,19 @@
-class Car:
-    def __init__(self, brand, model, speed=0):
-        self.brand = brand
-        self.model = model
-        self.speed = speed
+class Animal:
+    def speak(self):
+        print("Animal makes a sound")
 
-    def accelerate(self, value):
-        self.speed += value
-        print("Speed increased to:", self.speed)
+class Dog(Animal):
+    def speak(self):
+        print("Dog barks")
 
-    def brake(self, value):
-        self.speed -= value
-        if self.speed < 0:
-            self.speed = 0
-        print("Speed reduced to:", self.speed)
+class Cat(Animal):
+    def speak(self):
+        print("Cat meows")
 
 # Object creation
-car1 = Car("Maruti", "Swift")
+dog = Dog()
+cat = Cat()
 
 # Method calls
-car1.accelerate(40)
-car1.brake(15)
+dog.speak()
+cat.speak()

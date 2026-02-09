@@ -1,18 +1,11 @@
-class Shop:
-    def __init__(self):
-        self.products = []
+class Parent:
+    def show(self):
+        print("This is Parent class")
 
-    def add_product(self, product):
-        self.products.append(product)
-        print(f"{product} added to the shop.")
+class Child(Parent):
+    def show(self):
+        super().show()
+        print("This is Child class")
 
-    def list_products(self):
-        print("Products in shop:")
-        for p in self.products:
-            print("-", p)
-
-# Example
-shop = Shop()
-shop.add_product("Laptop")
-shop.add_product("Mouse")
-shop.list_products()
+c = Child()
+c.show()

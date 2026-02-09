@@ -1,12 +1,15 @@
-class Book:
-    def __init__(self, title, author, price):
-        self.title = title
-        self.author = author
-        self.price = price
+class BankAccount:
+    def __init__(self, balance):
+        self.balance = balance
 
-    def display_details(self):
-        print(f"Title: {self.title}, Author: {self.author}, Price: {self.price}")
+class SavingsAccount(BankAccount):
+    pass
 
-# Example
-book = Book("Python Basics", "John Doe", 299)
-book.display_details()
+class CurrentAccount(BankAccount):
+    pass
+
+s = SavingsAccount(5000)
+c = CurrentAccount(10000)
+
+print(s.balance)
+print(c.balance)
