@@ -1,6 +1,7 @@
-items = ["Apple", "Banana", "Mango"]
-
-f = open("data.txt", "a")
-for item in items:
-    f.write(item + "\n")
-f.close()
+try:
+    f = open("test.txt", "r")
+    print(f.read())
+except FileNotFoundError:
+    print("File not found")
+finally:
+    print("Program finished")

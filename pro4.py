@@ -1,5 +1,8 @@
-f = open("sentences.txt", "w")
-for i in range(5):
-    s = input("Enter sentence: ")
-    f.write(s + "\n")
-f.close()
+try:
+    a = int(input("Enter number: "))
+    b = int(input("Enter number: "))
+    print(a / b)
+except ZeroDivisionError:
+    print("Cannot divide by zero")
+except ValueError:
+    print("Invalid input")

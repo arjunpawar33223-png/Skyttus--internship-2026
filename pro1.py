@@ -1,3 +1,6 @@
-f= open("data.txt","r")
-print(f.read())
-f.close()
+try:
+    a = int(input("Enter number: "))
+    b = int(input("Enter number: "))
+    print(a / b)
+except ZeroDivisionError:
+    print("Division by zero is not allowed")

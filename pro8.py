@@ -1,7 +1,6 @@
-with open("file1.txt", "r") as f1, open("file2.txt", "r") as f2:
-    data = f1.read() + f2.read()
-
-with open("merged.txt", "w") as f:
-    f.write(data)
-
-print("Files merged")
+try:
+    a = int(input("Enter number: "))
+    b = int(input("Enter number: "))
+    print(a / b)
+except Exception as e:
+    print("Error:", e)

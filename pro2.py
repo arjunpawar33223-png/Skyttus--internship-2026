@@ -1,6 +1,5 @@
-f = open("data.txt", "r")
-count = 0
-for line in f:
-    count += 1
-print("Number of lines:", count)
-f.close()
+try:
+    n = int(input("Enter an integer: "))
+    print("You entered:", n)
+except ValueError:
+    print("Invalid input! Please enter integer only")

@@ -1,7 +1,10 @@
-word = input("Enter word to search: ")
+class AgeError(Exception):
+    pass
 
-f = open("data.txt", "r")
-for line in f:
-    if word in line:
-        print(line.strip())
-f.close()
+try:
+    age = int(input("Enter age: "))
+    if age < 18:
+        raise AgeError("Age must be 18 or above")
+    print("Valid age")
+except AgeError as e:
+    print(e)

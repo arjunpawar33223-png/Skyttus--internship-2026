@@ -1,12 +1,7 @@
-old = input("Enter old word: ")
-new = input("Enter new word: ")
+import random
 
-with open("data.txt", "r") as f:
-    content = f.read()
-
-content = content.replace(old, new)
-
-with open("data.txt", "w") as f:
-    f.write(content)
-
-print("Word replaced successfully")
+try:
+    x = random.choice([0, 1, "a"])
+    print(10 / x)
+except Exception as e:
+    print("Error:", e)

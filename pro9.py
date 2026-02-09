@@ -1,6 +1,9 @@
-import csv
-
-with open("data.csv", "r") as f:
-    reader = csv.reader(f)
-    for row in reader:
-        print(row)
+try:
+    a = int(input("Enter number: "))
+    b = int(input("Enter number: "))
+    print(a / b)
+except Exception as e:
+    f = open("error.log", "a")
+    f.write(str(e) + "\n")
+    f.close()
+    print("Error logged to file")
