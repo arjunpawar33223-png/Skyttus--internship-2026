@@ -1,15 +1,8 @@
 n = int(input("Enter a number: "))
-flag = True
 
-if n <= 1:
-    flag = False
+if n > 0:
+    print("Positive")
+elif n < 0:
+    print("Negative")
 else:
-    for i in range(2, n):
-        if n % i == 0:
-            flag = False
-            break
-
-if flag:
-    print("Prime number")
-else:
-    print("Not a prime number")
+    print("Zero")

@@ -1,8 +1,7 @@
-n = int(input("Enter a number: "))
-count = 0
+username = input("Enter username: ")
+password = input("Enter password: ")
 
-while n > 0:
-    count += 1
-    n = n // 10
-
-print("Total digits:", count)
+if username == "admin" and password == "1234":
+    print("Login successful")
+else:
+    print("Invalid credentials")

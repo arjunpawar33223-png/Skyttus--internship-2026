@@ -1,8 +1,7 @@
-n = int(input("Enter number of terms: "))
+balance = 10000
+amount = int(input("Enter withdrawal amount: "))
 
-a = 0
-b = 1
-
-for i in range(n):
-    print(a, end=" ")
-    a, b = b, a + b
+if amount <= balance:
+    print("Withdrawal successful")
+else:
+    print("Insufficient balance")

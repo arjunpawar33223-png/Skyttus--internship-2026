@@ -1,4 +1,14 @@
-n = int(input("Enter number of rows: "))
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+op = input("Enter operator (+ - * /): ")
 
-for i in range(1, n + 1):
-    print("* " * i)
+if op == "+":
+    print(a + b)
+elif op == "-":
+    print(a - b)
+elif op == "*":
+    print(a * b)
+elif op == "/":
+    print(a / b)
+else:
+    print("Invalid operator")
