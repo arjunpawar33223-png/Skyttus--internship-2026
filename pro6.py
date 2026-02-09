@@ -1,6 +1,8 @@
-n = int(input("Enter a number: "))
+def count_vowels(s):
+    count = 0
+    for ch in s.lower():
+        if ch in "aeiou":
+            count += 1
+    return count
 
-if n >= 10 and n <= 50:
-    print("Number is within range")
-else:
-    print("Number is outside range")
+print(count_vowels("Education"))

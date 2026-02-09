@@ -1,7 +1,4 @@
-username = input("Enter username: ")
-password = input("Enter password: ")
+def merge_lists(list1, list2):
+    return list1 + list2
 
-if username == "admin" and password == "1234":
-    print("Login successful")
-else:
-    print("Invalid credentials")
+print(merge_lists([1,2,3], [4,5,6]))

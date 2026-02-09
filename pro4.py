@@ -1,7 +1,4 @@
-balance = 10000
-amount = int(input("Enter withdrawal amount: "))
+def simple_interest(p, r, t):
+    return (p * r * t) / 100
 
-if amount <= balance:
-    print("Withdrawal successful")
-else:
-    print("Insufficient balance")
+print(simple_interest(1000, 5, 2))

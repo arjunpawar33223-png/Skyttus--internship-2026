@@ -1,4 +1,4 @@
-n = int(input("Enter a number: "))
+def reverse_string(s):
+    return s[::-1]
 
-for i in range(1, 11):
-    print(n, "x", i, "=", n * i)
+print(reverse_string("hello"))

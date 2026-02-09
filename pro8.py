@@ -1,10 +1,6 @@
-units = int(input("Enter units consumed: "))
+def gcd(a, b):
+    while b != 0:
+        a, b = b, a % b
+    return a
 
-if units <= 100:
-    bill = units * 2
-elif units <= 200:
-    bill = units * 3
-else:
-    bill = units * 5
-
-print("Electricity bill:", bill)
+print(gcd(16, 20))
