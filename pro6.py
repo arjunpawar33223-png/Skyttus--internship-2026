@@ -1,8 +1,7 @@
-def count_vowels(s):
-    count = 0
-    for ch in s.lower():
-        if ch in "aeiou":
-            count += 1
-    return count
+word = input("Enter word to search: ")
 
-print(count_vowels("Education"))
+f = open("data.txt", "r")
+for line in f:
+    if word in line:
+        print(line.strip())
+f.close()

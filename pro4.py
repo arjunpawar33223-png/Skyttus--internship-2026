@@ -1,4 +1,5 @@
-def simple_interest(p, r, t):
-    return (p * r * t) / 100
-
-print(simple_interest(1000, 5, 2))
+f = open("sentences.txt", "w")
+for i in range(5):
+    s = input("Enter sentence: ")
+    f.write(s + "\n")
+f.close()

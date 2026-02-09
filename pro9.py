@@ -1,4 +1,6 @@
-def area_rectangle(length, width):
-    return length * width
+import csv
 
-print(area_rectangle(5, 4))
+with open("data.csv", "r") as f:
+    reader = csv.reader(f)
+    for row in reader:
+        print(row)

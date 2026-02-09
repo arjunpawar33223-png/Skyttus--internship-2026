@@ -1,4 +1,6 @@
-def reverse_string(s):
-    return s[::-1]
-
-print(reverse_string("hello"))
+f = open("data.txt", "r")
+count = 0
+for line in f:
+    count += 1
+print("Number of lines:", count)
+f.close()

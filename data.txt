@@ -1,0 +1,7 @@
+Hello python 
+ file handilingApple
+Banana
+Mango
+Apple
+Banana
+Mango

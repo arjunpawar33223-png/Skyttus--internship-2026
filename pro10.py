@@ -1,10 +1,7 @@
-a = int(input("Enter side 1: "))
-b = int(input("Enter side 2: "))
-c = int(input("Enter side 3: "))
+with open("data.txt", "r") as f:
+    content = f.read()
 
-if a == b == c:
-    print("Equilateral triangle")
-elif a == b or b == c or a == c:
-    print("Isosceles triangle")
-else:
-    print("Scalene triangle")
+with open("backup.txt", "w") as f:
+    f.write(content)
+
+print("Backup created")

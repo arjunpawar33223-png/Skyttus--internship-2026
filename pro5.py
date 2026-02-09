@@ -1,4 +1,6 @@
-def is_palindrome(word):
-    return word == word[::-1]
+items = ["Apple", "Banana", "Mango"]
 
-print(is_palindrome("madam"))
+f = open("data.txt", "a")
+for item in items:
+    f.write(item + "\n")
+f.close()

@@ -1,7 +1,10 @@
-def factorial(n):
-    fact = 1
-    for i in range(1, n+1):
-        fact *= i
-    return fact
+f = open("data.txt", "r")
+text = f.read().lower()
+words = text.split()
 
-print(factorial(6))
+word_count = {}
+for w in words:
+    word_count[w] = word_count.get(w, 0) + 1
+
+print(word_count)
+f.close()
