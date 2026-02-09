@@ -1,9 +1,19 @@
-try:
-    a = int(input("Enter number: "))
-    b = int(input("Enter number: "))
-    print(a / b)
-except Exception as e:
-    f = open("error.log", "a")
-    f.write(str(e) + "\n")
-    f.close()
-    print("Error logged to file")
+class Flight:
+    def __init__(self, flight_number, total_seats):
+        self.flight_number = flight_number
+        self.total_seats = total_seats
+        self.booked_seats = 0
+
+    def book_seat(self):
+        if self.booked_seats < self.total_seats:
+            self.booked_seats += 1
+            print(f"Seat booked. Remaining seats: {self.total_seats - self.booked_seats}")
+        else:
+            print("No seats available!")
+
+# Example
+flight = Flight("AI101", 3)
+flight.book_seat()
+flight.book_seat()
+flight.book_seat()
+flight.book_seat()

@@ -1,10 +1,12 @@
-class AgeError(Exception):
-    pass
+class Book:
+    def __init__(self, title, author, price):
+        self.title = title
+        self.author = author
+        self.price = price
 
-try:
-    age = int(input("Enter age: "))
-    if age < 18:
-        raise AgeError("Age must be 18 or above")
-    print("Valid age")
-except AgeError as e:
-    print(e)
+    def display_details(self):
+        print(f"Title: {self.title}, Author: {self.author}, Price: {self.price}")
+
+# Example
+book = Book("Python Basics", "John Doe", 299)
+book.display_details()

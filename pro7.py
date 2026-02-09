@@ -1,7 +1,16 @@
-import random
+import math
 
-try:
-    x = random.choice([0, 1, "a"])
-    print(10 / x)
-except Exception as e:
-    print("Error:", e)
+class Circle:
+    def __init__(self, radius):
+        self.radius = radius
+
+    def area(self):
+        return math.pi * self.radius ** 2
+
+    def circumference(self):
+        return 2 * math.pi * self.radius
+
+# Example
+circle = Circle(5)
+print("Area:", round(circle.area(), 2))
+print("Circumference:", round(circle.circumference(), 2))
